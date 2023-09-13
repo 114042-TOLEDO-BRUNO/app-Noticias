@@ -1,0 +1,6 @@
+<app-navbar [titulo]="'App Noticias'"></app-navbar> <!--valor de titulo que lo capta el navbarComponent con la variable @Input titulo-->
+<div class="container">
+  <app-formulario (parametrosSeleccionados)="buscarNoticia($event)"></app-formulario>
+  <app-spinner *ngIf="loading===true"></app-spinner><!--llamar a la variable loading-->
+  <app-listado-noticias [listadoNoticias]="listaDeNoticias"></app-listado-noticias><!--listadoNoticias se llama el input de listado noticias component. ListadoDeNoticias esde donde recibe la informacion que esta en appCOmponent-->
+</div>
