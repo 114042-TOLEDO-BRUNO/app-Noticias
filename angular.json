@@ -16,6 +16,7 @@
             "outputPath": "dist/app-noticias",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/app-Noticias/",
             "polyfills": [
               "zone.js"
             ],
